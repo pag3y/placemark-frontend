@@ -21,7 +21,7 @@ function Signup() {
     setError('');
 
     try {
-      const res = await fetch('http://localhost:4000/api/users/signup', {
+      const res = await fetch('https://placemark-backend-y2j0.onrender.com/api/users/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...form, role: 'user' })
