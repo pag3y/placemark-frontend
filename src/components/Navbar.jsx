@@ -19,6 +19,7 @@ export default function Navbar() {
           <>
             <Link to="/login">Login</Link>
             <Link to="/signup">Signup</Link>
+            <Link to="/about">About</Link>
           </>
         )}
         {user?.role === 'admin' && <Link to="/admin">Admin Panel</Link>}

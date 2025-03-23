@@ -9,6 +9,7 @@ import Dashboard from './pages/Dashboard';
 import Admin from './pages/Admin';
 import Profile from './pages/Profile';
 import PublicFeed from './pages/PublicFeed';
+import About from './pages/About';
 import './index.css'; // Global
 import './App.css';   // App-specific
 
@@ -26,6 +27,7 @@ createRoot(document.getElementById('root')).render(
             <Route path="profile" element={<Profile />} />
             <Route path="/feed" element={<PublicFeed />} />
             <Route path="dashboard" element={<Dashboard />} />
+            <Route path="about" element={<About />} />
           </Route>
         </Routes>
       </AuthProvider>

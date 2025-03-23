@@ -1,0 +1,41 @@
+.about-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f3f1e7;
+    border: 2px solid #bfa16a;
+    border-radius: 12px;
+    font-family: 'Georgia', serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-container h2 {
+    color: #5c4a1f;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-container p {
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .about-container ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .about-container li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #d8c69b;
+  }
+  
+  .about-container li:last-child {
+    border-bottom: none;
+  }
+  
+  .about-container strong {
+    color: #5c4a1f;
+  }
+  
