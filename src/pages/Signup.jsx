@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import api from '../api'; // ✅ Your preconfigured axios instance
 import '../styles/Signup.css';
 
 function Signup() {
@@ -21,26 +22,23 @@ function Signup() {
     setError('');
 
     try {
-      const res = await fetch('https://placemark-backend-y2j0.onrender.com/api/users/signup', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...form, role: 'user' })
+      const res = await api.post('/users/signup', {
+        ...form,
+        role: 'user'
       });
 
-      const data = await res.json();
-
-      if (res.ok) {
+      if (res.status === 201) {
         navigate('/login');
       } else {
-        setError(data.error || 'Signup failed');
+        setError(res.data.error || 'Signup failed');
       }
     } catch (err) {
       console.error(err);
-      setError('Server error. Try again later.');
+      setError(err.response?.data?.error || 'Server error. Try again later.');
     }
   };
 
-  return (
+return (
     <div className="signup-container">
       <h2>Sign Up</h2>
       {error && <p className="signup-error">{error}</p>}

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import axios from '../api';
+import api from '../api';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../utils/Auth.jsx';
 import '../styles/Login.css';
@@ -14,7 +14,7 @@ export default function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('/users/login', { email, password });
+      const res = await api.post('/users/login', { email, password });
       login(res.data.token);
       setMessage('Login successful!');
       setTimeout(() => navigate('/dashboard'), 1000);
