@@ -1,0 +1,15 @@
+.map-card {
+  background-color: var(--surface);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 6px var(--shadow);
+}
+
+.map-card h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: var(--font-accent);
+  color: var(--accent);
+}

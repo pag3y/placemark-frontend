@@ -1,0 +1,34 @@
+.navbar {
+    background-color: var(--accent);
+    padding: 1rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    color: var(--accent-light);
+  }
+  
+  .spacer {
+    flex: 1; /* 👈 Pushes everything after this to the right */
+  }
+  
+  .logout-button {
+    background-color: crimson;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

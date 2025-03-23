@@ -1,0 +1,95 @@
+@import "leaflet/dist/leaflet.css";
+
+:root {
+  --font-main: 'Georgia', serif;
+  --font-accent: 'Garamond', serif;
+
+  /* Light theme colors */
+  --background: #fdfcf9;
+  --surface: #fffefc;
+  --text: #2f2f2f;
+  --muted: #666;
+  --accent: #764c24;
+  --accent-light: #b8926a;
+  --border: #ddd;
+  --shadow: rgba(0, 0, 0, 0.05);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-accent);
+  color: var(--accent);
+  margin-top: 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--accent-light);
+}
+
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--accent);
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--accent-light);
+}
+
+main {
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px var(--shadow);
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+
+.text-muted { color: var(--muted); }
+.text-center { text-align: center; }
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+}

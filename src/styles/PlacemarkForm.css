@@ -1,0 +1,58 @@
+.placemark-form {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-inline: auto;
+  font-family: var(--font-main);
+  box-shadow: 0 2px 6px var(--shadow);
+}
+
+.placemark-form h3 {
+  color: var(--accent);
+  font-family: var(--font-accent);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.placemark-form input,
+.placemark-form textarea,
+.placemark-form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.placemark-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.placemark-form button {
+  background-color: var(--accent);
+  color: white;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.placemark-form button:hover {
+  background-color: var(--accent-light);
+}
+
+.placemark-form p {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--muted);
+}
