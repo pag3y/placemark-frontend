@@ -3,11 +3,11 @@ import '../styles/About.css';
 export default function About() {
   return (
     <div className="about-container">
-      <h2>🏛️ About Historical Placemark</h2>
+      <h2>🏛️ About Historical Placemarks</h2>
 
       <section className="about-section">
         <p>
-          <strong>Historical Placemark</strong> is a web application designed to help history enthusiasts,
+          <strong>Historical Placemarks</strong> is a web application designed to help history enthusiasts,
           students, and researchers document and explore Ireland's rich historical heritage.
         </p>
 
@@ -44,7 +44,7 @@ export default function About() {
       </section>
 
       <section className="about-footer">
-        <p>Created by Tom Pag3y | HDip Computing Assignment 1 (2025)</p>
+        <p>Created by Tom Page | HDip Computing Assignment 1 (2025)</p>
       </section>
     </div>
   );

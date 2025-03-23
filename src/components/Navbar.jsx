@@ -25,6 +25,7 @@ export default function Navbar() {
         {user?.role === 'admin' && <Link to="/admin">Admin Panel</Link>}
         {user && <Link to="/feed">Placemark Feed</Link>}
         {user && <Link to="/profile">Profile</Link>}
+        {user && <Link to="/about">About</Link>}
 
         <div className="spacer" /> {}
 
